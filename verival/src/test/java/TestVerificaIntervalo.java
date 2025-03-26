@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import com.exerc.VerificaIntervalo;
 
-public class VerificaIntervaloTest {
+public class TestVerificaIntervalo {
 
     @Test
     @DisplayName("25.01 == Intervalo(25,50]")
