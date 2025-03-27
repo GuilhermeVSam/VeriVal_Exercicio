@@ -44,7 +44,7 @@ jobs:
 
       - name: Build project with Maven
         if: matrix.build-mode == 'manual'
-        run: mvn clean package -DskipTests
+        run: cd verival && mvn clean package -DskipTests
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v3
