@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.exerc.MainTest" time="0.08" tests="1" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.exerc.MainTest" time="0.094" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -11,7 +11,7 @@
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/usr/local/sdkman/candidates/java/17.0.14-amzn/lib"/>
-    <property name="sun.java.command" value="/workspaces/VeriVal_Exercicio/verival/target/surefire/surefirebooter-20250327143151204_3.jar /workspaces/VeriVal_Exercicio/verival/target/surefire 2025-03-27T14-31-51_074-jvmRun1 surefire-20250327143151204_1tmp surefire_0-20250327143151204_2tmp"/>
+    <property name="sun.java.command" value="/workspaces/VeriVal_Exercicio/verival/target/surefire/surefirebooter-20250327175404341_3.jar /workspaces/VeriVal_Exercicio/verival/target/surefire 2025-03-27T17-54-04_242-jvmRun1 surefire-20250327175404341_1tmp surefire_0-20250327175404341_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/workspaces/VeriVal_Exercicio/verival/target/test-classes:/workspaces/VeriVal_Exercicio/verival/target/classes:/home/codespace/.m2/repository/org/junit/jupiter/junit-jupiter/5.12.1/junit-jupiter-5.12.1.jar:/home/codespace/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.12.1/junit-jupiter-api-5.12.1.jar:/home/codespace/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/home/codespace/.m2/repository/org/junit/platform/junit-platform-commons/1.12.1/junit-platform-commons-1.12.1.jar:/home/codespace/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/home/codespace/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.12.1/junit-jupiter-params-5.12.1.jar:/home/codespace/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.12.1/junit-jupiter-engine-5.12.1.jar:/home/codespace/.m2/repository/org/junit/platform/junit-platform-engine/1.12.1/junit-platform-engine-1.12.1.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -26,7 +26,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="/workspaces/VeriVal_Exercicio/verival/target/surefire/surefirebooter-20250327143151204_3.jar"/>
+    <property name="surefire.real.class.path" value="/workspaces/VeriVal_Exercicio/verival/target/surefire/surefirebooter-20250327175404341_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.14+7-LTS"/>
     <property name="user.name" value="codespace"/>
@@ -52,18 +52,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="checkInterval" classname="com.exerc.MainTest" time="0.04">
-    <failure message="expected: &lt;Fora de intervalo&gt; but was: &lt;Fora de Intervalo&gt;" type="org.opentest4j.AssertionFailedError"><![CDATA[org.opentest4j.AssertionFailedError: expected: <Fora de intervalo> but was: <Fora de Intervalo>
-	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
-	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
-	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
-	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
-	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
-	at com.exerc.MainTest.checkInterval(MainTest.java:16)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-]]></failure>
-  </testcase>
+  <testcase name="checkInterval" classname="com.exerc.MainTest" time="0.034"/>
 </testsuite>

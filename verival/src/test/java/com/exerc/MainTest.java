@@ -10,9 +10,19 @@ public class MainTest {
     @Test
     @DisplayName("Testing verificaIntervalo()")
     void checkInterval() {
-        assertEquals(Main.verificaIntervalo(25.01), "Intervalo (25,50]");
-        assertEquals(Main.verificaIntervalo(25.00), "Intervalo [0,25]");
-        assertEquals(Main.verificaIntervalo(100.00), "Intervalo (75,100]");
-        assertEquals(Main.verificaIntervalo(-25.02), "Fora de Intervalo");
+        // Beecrowd
+        assertEquals("Intervalo (25,50]", Main.verificaIntervalo(25.01));
+        assertEquals("Intervalo [0,25]", Main.verificaIntervalo(25.00));
+        assertEquals("Intervalo (75,100]", Main.verificaIntervalo(100.00));
+        assertEquals("Fora de Intervalo", Main.verificaIntervalo(-25.02));
+
+        // Mais testes
+        assertEquals("Intervalo (25,50]", Main.verificaIntervalo(50.00));    // On Point
+        assertEquals("Intervalo (50,75]", Main.verificaIntervalo(50.01));    // Off Point
+
+        assertEquals("Intervalo (50,75]", Main.verificaIntervalo(75.00));    // On Point
+        assertEquals("Intervalo (75,100]", Main.verificaIntervalo(75.01));    // Off Point
+
+        assertEquals("Fora de Intervalo", Main.verificaIntervalo(100.01));
     }
 }

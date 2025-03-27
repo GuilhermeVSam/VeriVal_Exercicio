@@ -15,7 +15,7 @@ public class Main {
         } else if (valor >= 75.00001 && valor <= 100){
             return"Intervalo (75,100]";
         } else {
-            return"Fora de intervalo";
+            return"Fora de Intervalo";
         }
     }
 }
